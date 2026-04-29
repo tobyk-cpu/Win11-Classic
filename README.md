@@ -1,25 +1,27 @@
----
+# Win11 Classic
 
-# Win11 Classic 🚀
+Herramienta en Python diseñada para restaurar el menú de clic derecho clásico de Windows 10 en Windows 11 mediante la modificación del registro.
 
-Este proyecto es una herramienta sencilla desarrollada en **Python** diseñada para personalizar o modificar aspectos de la interfaz de **Windows 11**. Permite aplicar cambios clásicos al sistema de forma rápida y eficiente.
+## Funciones principales
+* Recuperación de menús y comportamientos clásicos de Windows.
+* Modificación automática de claves de registro (Regedit).
+* Interfaz directa para evitar procesos manuales complejos.
 
----
+## Requisitos
+* Python 3.x.
+* Permisos de administrador (necesarios para modificar el registro).
 
-## 🛠️ Características
-*   **Automatización**: Realiza cambios en el sistema sin necesidad de navegar manualmente por el registro.
-*   **Portabilidad**: Puede convertirse en un archivo `.exe` utilizando PyInstaller.
-*   **Minimalismo**: Diseño enfocado en la funcionalidad y simplicidad.
-
----
-
-## 🚀 Instalación y Uso
-
-### Requisitos previos
-*   Tener instalado **Python 3.x**.
-*   (Opcional) **PyInstaller** si deseas generar tu propio ejecutable.
-
-### Ejecución
-Para ejecutar el script directamente:
-```powershell
+## Uso
+Ejecutar el script:
 python "Win11 Classic.py"
+
+Crear ejecutable (.exe):
+pyinstaller --noconsole --onefile "Win11 Classic.py"
+
+## Archivos
+* Win11 Classic.py: Código fuente.
+* icono.ico: Recurso visual para el ejecutable.
+* .gitignore: Filtro de archivos para Git.
+
+## Advertencia
+El uso de este software es bajo responsabilidad del usuario ya que modifica configuraciones críticas del sistema.
