@@ -31,11 +31,11 @@ class MenuManager(QWidget):
             QMessageBox.critical(self, "Error", f"No se pudo aplicar: {e}")
 
     def activar_clasico(self):
-        cmd = 'reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve'
+        cmd = r'reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve'
         self.ejecutar_comando(cmd)
 
     def restaurar_original(self):
-        cmd = 'reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f'
+        cmd = r'reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f'
         self.ejecutar_comando(cmd)
 
 if __name__ == '__main__':
